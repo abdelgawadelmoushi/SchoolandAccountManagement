@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36414.22 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountManagement", "AccountManagement\AccountManagement.csproj", "{9426F5B2-1CAB-466F-915F-B3F6C97EBB31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoolManagement", "ShoolManagement\ShoolManagement.csproj", "{76D659B2-DCE9-4257-A850-A71A3AF76AE3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9426F5B2-1CAB-466F-915F-B3F6C97EBB31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9426F5B2-1CAB-466F-915F-B3F6C97EBB31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9426F5B2-1CAB-466F-915F-B3F6C97EBB31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9426F5B2-1CAB-466F-915F-B3F6C97EBB31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76D659B2-DCE9-4257-A850-A71A3AF76AE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76D659B2-DCE9-4257-A850-A71A3AF76AE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76D659B2-DCE9-4257-A850-A71A3AF76AE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76D659B2-DCE9-4257-A850-A71A3AF76AE3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1D9ED36F-0EC6-4CBE-9345-51FE20B8A585}
+	EndGlobalSection
+EndGlobal
