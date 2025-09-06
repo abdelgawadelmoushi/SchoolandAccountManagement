@@ -13,7 +13,7 @@ namespace AccountManagement
 
         public static void Display<T>(List<T> accounts) where T : Account
         {
-            Console.WriteLine("\n=== Accounts ==========================================");
+            Console.WriteLine("\n Accounts");
             foreach (var acc in accounts)
             {
                 Console.WriteLine(acc);
@@ -22,7 +22,7 @@ namespace AccountManagement
 
         public static void Deposit<T>(List<T> accounts, double amount) where T : Account
         {
-            Console.WriteLine("\n=== Depositing to Accounts =================================");
+            Console.WriteLine("\n depositing under process ");
             foreach (var acc in accounts)
             {
                 if (acc.Deposit(amount))
@@ -34,7 +34,7 @@ namespace AccountManagement
 
         public static void Withdraw<T>(List<T> accounts, double amount) where T : Account
         {
-            Console.WriteLine("\n=== Withdrawing from Accounts ==============================");
+            Console.WriteLine("\n Withdrawing from the Accounts ");
             foreach (var acc in accounts)
             {
                 if (acc.Withdraw(amount))
