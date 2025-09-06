@@ -1,0 +1,120 @@
+Exception Handling Keywords
+- try → Code block to monitor
+- catch → Handles the exception
+- finally → Executes always (cleanup)
+- throw → Raise an exception
+
+معالجة الاستثناءات في C#
+كيفية جعل البرامج أكثر أمانًا وموثوقية
+
+
+ما هو الاستثناء؟
+- الاستثناء هو خطأ يحدث أثناء التنفيذ
+- أمثلة:
+  • القسمة على صفر
+  • ملف غير موجود
+  • مرجع فارغ (Null Reference)
+
+
+لماذا نعالج الاستثناءات؟
+- منع انهيار التطبيق
+- إظهار رسائل خطأ مفهومة للمستخدم
+- الحفاظ على تدفق البرنامج
+- تسجيل الأخطاء لتصحيحها
+
+الكلمات المفتاحية لمعالجة الاستثناءات
+- try → الكود المراقب
+- catch → لمعالجة الاستثناء
+- finally → يُنفذ دائمًا (تنظيف)
+- throw → لرفع استثناء
+
+
+
+Basic Example
+
+try
+{
+    int x = 10, y = 0;
+    int result = x / y;
+}
+catch (DivideByZeroException ex)
+{
+    Console.WriteLine("Cannot divide by zero!");
+}
+finally
+{
+    Console.WriteLine("Execution finished.");
+}
+
+
+
+
+
+Multiple Catch Blocks
+
+try
+{
+    int[] arr = new int[3];
+    Console.WriteLine(arr[5]);
+}
+catch (IndexOutOfRangeException ex)
+{
+    Console.WriteLine("Index is out of range!");
+}
+catch (Exception ex)
+{
+    Console.WriteLine("An error occurred: " + ex.Message);
+}
+
+
+
+
+
+
+Throwing Exceptions
+
+
+void Withdraw(decimal amount)
+{
+    if (amount <= 0)
+        throw new ArgumentException("Amount must be greater than zero");
+}
+
+
+
+
+
+Custom Exceptions
+
+
+public class InvalidAgeException : Exception
+{
+    public InvalidAgeException(string message) : base(message) {}
+}
+
+
+
+
+
+
+
+Best Practices
+
+- Catch specific exceptions, not general Exception
+- Don’t use exceptions for normal logic
+- Always clean resources in finally or using
+- Log exceptions for debugging
+
+
+
+
+
+Summary
+
+- Exceptions represent runtime errors
+- try-catch-finally is the main handling mechanism
+- Use throw to raise exceptions
+- Handle them properly to build robust apps
+
+
+
